@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Hello Ext</title>
+</head>
+<body>
+	
+    <script type="text/javascript" src="ext-all.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script>
+    	Ext.define('Classes.Person', {
+    		name: 'Andrey',
+    		surname: 'Kuznetsov',
+
+    		getInfo: function() {
+    			console.log('Привет ' + this.name + ' ' + this.surname);
+    		}    		
+    	});
+    	var andrey = Ext.create('Classes.Person');
+    	andrey.getInfo();
+    </script>
+</body>
+</html>
+
